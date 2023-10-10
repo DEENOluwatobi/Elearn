@@ -7,12 +7,12 @@ const Navbar = () => {
             Logo
         </div>
 
-        <ul>
+        <ul className='flex justify-between items-center'>
             <li>HOME</li>
             <li>ADMISSION</li>
             <li>SKILL</li>
             <li>ABOUT</li>
-
+            <li>BATCH 2023</li>
         </ul>
 
         <div>
