@@ -17,12 +17,28 @@
   }
 }
 
-/* body {
-  color: rgb(var(--foreground-rgb));
+body {
+  /* color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
-} */
+    rgb(var(--background-start-rgb)); */
+}
+
+.primary{
+  color: #2b6777;
+}
+.secondary{
+  color: #52ab98;
+}
+.tertiary{
+  color: #c8d8e4;
+}
+.bg-primary{
+  background-color: #2b6777;
+}
+.bg-secondary{
+  background-color: #52ab98;
+}
