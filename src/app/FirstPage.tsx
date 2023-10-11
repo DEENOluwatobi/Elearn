@@ -27,7 +27,7 @@ const FirstPage = () => {
     }
   };
 
-  // Initialize the default component
+ 
   useEffect(() => {
     handleLinkClick('/');
   }, []);

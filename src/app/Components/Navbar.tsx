@@ -74,13 +74,14 @@ const Navbar: React.FC<NavbarProps> = ({ onLinkClick }) => {
         <span className='text-white text-[.7em] font-semibold text-center w-full'>Seeking to acquire knowledge online? - Join now</span>
       </div>
 
-      <div className='w-full h-12 flex justify-between items-center px-2 py-1 bg-[#f2f2f2]'>
-        <div className='text-[.9em] font-semibold text-gray-700'>
+      <div className='w-full h-12 flex justify-between items-center px-2 py-1 bg-[#f2f2f2] '>
+        
+        <div className='text-[.9em] font-semibold text-gray-700 cursor-pointer'>
           Logo
         </div>
         <ul className='flex justify-between items-center gap-4'>
           <li
-            className='relative group list-none text-[.9em] font-semibold text-gray-700'
+            className='relative group list-none text-[.9em] font-semibold text-gray-700 cursor-pointer'
             onClick={() => handleLinkClick('/')}
           >
             HOME
@@ -88,7 +89,7 @@ const Navbar: React.FC<NavbarProps> = ({ onLinkClick }) => {
           </li>
 
           <li
-            className='relative group list-none text-[.9em] font-semibold text-gray-700'
+            className='relative group list-none text-[.9em] font-semibold text-gray-700 cursor-pointer'
             onClick={() => handleLinkClick('/admission')}
           >
             ADMISSION
@@ -96,7 +97,7 @@ const Navbar: React.FC<NavbarProps> = ({ onLinkClick }) => {
           </li>
 
           <li
-            className='relative group list-none text-[.9em] font-semibold text-gray-700'
+            className='relative group list-none text-[.9em] font-semibold text-gray-700 cursor-pointer'
             onClick={() => handleLinkClick('/skill')}
           >
             SKILL
@@ -104,7 +105,7 @@ const Navbar: React.FC<NavbarProps> = ({ onLinkClick }) => {
           </li>
 
           <li
-            className='relative group list-none text-[.9em] font-semibold text-gray-700'
+            className='relative group list-none text-[.9em] font-semibold text-gray-700 cursor-pointer'
             onClick={() => handleLinkClick('/batch')}
           >
             BATCH-23
@@ -112,7 +113,7 @@ const Navbar: React.FC<NavbarProps> = ({ onLinkClick }) => {
           </li>
 
           <li
-            className='relative group list-none text-[.9em] font-semibold text-gray-700'
+            className='relative group list-none text-[.9em] font-semibold text-gray-700 cursor-pointer'
             onClick={() => handleLinkClick('/about')}
           >
             ABOUT
@@ -122,7 +123,7 @@ const Navbar: React.FC<NavbarProps> = ({ onLinkClick }) => {
 
         <div>
           <span
-            className='px-5 py-1 rounded-md border border-[primary] text-white text-center text-[.9em] bg-secondary'
+            className='px-5 py-1 rounded-md border border-[primary] text-white text-center text-[.9em] bg-secondary cursor-pointer'
             onClick={() => handleLinkClick('/login')}
           >
             Login
