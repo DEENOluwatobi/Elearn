@@ -11,6 +11,10 @@ const Navbar: React.FC<NavbarProps> = ({ onLinkClick }) => {
   const handleLinkClick = (path: string) => {
     onLinkClick(path);
   };
+  const MobileLinkClick = (path: string) => {
+    onLinkClick(path);
+    setMenu(!menu);
+  };
 
   const [ menu, setMenu ] = useState(false)
 
@@ -26,12 +30,12 @@ const Navbar: React.FC<NavbarProps> = ({ onLinkClick }) => {
         </div>
         {
           menu &&
-            <div className='flex md:hidden flex-col absolute top-0 left-0 bg-primary w-[15em] h-screen text-white overflow-hidden'>
+            <div className='flex md:hidden flex-col absolute top-0 left-0 bg-primary w-[15em] h-screen text-white overflow-hidden mt-5'>
               <Close className='cursor-pointer text-white'  onClick={()=>setMenu(!menu)}/>
               <div className='flex flex-col gap-2'>
-                <span className='text-white' onClick={()=>handleLinkClick('/')}>Home</span>
-                <span className='text-white' onClick={()=>handleLinkClick('about')}>About Us</span>
-                <span className='text-white' onClick={()=>handleLinkClick('contact')}>Contact us</span>
+                <span className='text-white' onClick={()=>MobileLinkClick('/')}>Home</span>
+                <span className='text-white' onClick={()=>MobileLinkClick('/admission')}>Admission</span>
+                <span className='text-white' onClick={()=>MobileLinkClick('/skill')}>Skill</span>
               </div>
             </div>
         }
