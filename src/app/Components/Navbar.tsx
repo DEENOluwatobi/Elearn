@@ -2,6 +2,8 @@
 import React, { useState } from 'react';
 import MenuIcon from '@mui/icons-material/Menu';
 import { Close } from '@mui/icons-material';
+import { motion } from 'framer-motion';
+import ThemeBtn from './ThemeBtn';
 
 type NavbarProps = {
   onLinkClick: (path: string) => void;
@@ -30,14 +32,27 @@ const Navbar: React.FC<NavbarProps> = ({ onLinkClick }) => {
         </div>
         {
           menu &&
-            <div className='flex md:hidden flex-col absolute top-0 left-0 bg-primary w-[15em] h-screen text-white overflow-hidden mt-5'>
-              <Close className='cursor-pointer text-white'  onClick={()=>setMenu(!menu)}/>
-              <div className='flex flex-col gap-2'>
-                <span className='text-white' onClick={()=>MobileLinkClick('/')}>Home</span>
-                <span className='text-white' onClick={()=>MobileLinkClick('/admission')}>Admission</span>
-                <span className='text-white' onClick={()=>MobileLinkClick('/skill')}>Skill</span>
-              </div>
-            </div>
+            <motion.div 
+              initial={{ opacity: 0, x: "-20%" }}
+              animate={{ opacity: 1, x: "-2%" }}
+              exit={{ opacity: 0, x: "-20%" }}  
+              className='flex md:hidden flex-col absolute top-0 left-0 bg-primary w-[15em] h-screen text-white 
+                overflow-hidden mt-5 z-10 px-4 py-3 pb=5'
+            >  
+                <Close className='cursor-pointer text-white mb-5' onClick={()=>setMenu(!menu)}/>
+                <div className='flex flex-col gap-2 border-b border-[#f2f2f2] py-2'>
+                  <span className='text-white font-semibold' onClick={()=>MobileLinkClick('/')}>HOME</span>
+                  <span className='text-white font-semibold' onClick={()=>MobileLinkClick('/class')}>CLASSROOM</span>
+                  <span className='text-white font-semibold' onClick={()=>MobileLinkClick('/admission')}>ADMISSION</span>
+                  <span className='text-white font-semibold' onClick={()=>MobileLinkClick('/skill')}>SKILL</span>
+                  <span className='text-white font-semibold' onClick={()=>MobileLinkClick('/about')}>ABOUT</span>
+                  <span className='text-white font-semibold' onClick={()=>MobileLinkClick('/batch')}>BATCH-23</span>
+                </div>
+
+                <div className='w-full mt-auto p-3'>
+                  <ThemeBtn/>
+                </div>   
+            </motion.div>
         }
         <div className='text-[.9em] font-semibold text-gray-700 cursor-pointer'>
           Logo
@@ -85,7 +100,8 @@ const Navbar: React.FC<NavbarProps> = ({ onLinkClick }) => {
           </li>
         </ul>
 
-        <div>
+        <div className='flex gap-2 justify-center items-center'>
+          <ThemeBtn/>
           <span
             className='px-5 py-1 rounded-md border border-[primary] text-white text-center text-[.9em] bg-secondary cursor-pointer'
             onClick={() => handleLinkClick('/login')}
