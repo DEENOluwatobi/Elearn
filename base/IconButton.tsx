@@ -14,7 +14,7 @@ const IconClassNames = variantProps({
   base: "grid origin-center place-items-center rounded-full active:scale-95 p-0",
   variants: {
     size: {
-      xs: "h-7 w-7 p-0",
+      xs: "h-6 w-6 p-0",
       sm: "h-8 w-8 p-0",
       smp: "h-8 w-8 p-0",
       md: " h-12 w-12 p-0",

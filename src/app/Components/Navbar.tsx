@@ -4,12 +4,14 @@ import MenuIcon from '@mui/icons-material/Menu';
 import { Close } from '@mui/icons-material';
 import { motion } from 'framer-motion';
 import ThemeBtn from './ThemeBtn';
+import { useTheme } from '@context/ThemeContext'
 
 type NavbarProps = {
   onLinkClick: (path: string) => void;
 };
 
 const Navbar: React.FC<NavbarProps> = ({ onLinkClick }) => {
+
   const handleLinkClick = (path: string) => {
     onLinkClick(path);
   };
@@ -19,14 +21,21 @@ const Navbar: React.FC<NavbarProps> = ({ onLinkClick }) => {
   };
 
   const [ menu, setMenu ] = useState(false)
+  const { theme } = useTheme();
+  const styles = {
+    container: {
+      backgroundColor: theme === 'dark' ? '#150a0a' : 'white',
+      color: theme === 'dark' ? 'white' : 'black',
+    }
+  }
 
   return (
     <div className='fixed top-0 left-0 w-full flex flex-col'>
-      <div className='w-full h-5 bg-secondary flex justify-center items-center'>
+      <div className={`w-full h-5 bg-secondary flex justify-center items-center`}>
         <span className='text-white text-[.7em] font-semibold text-center w-full'>Seeking to acquire knowledge online? - Join now</span>
       </div>
 
-      <div className='w-full h-12 flex justify-between items-center px-2 py-1 bg-[#f2f2f2] '>
+      <div className={`${theme === 'dark' ? 'bg-[#b4b3b3]' : 'bg-[#f2f2f2]'} w-full h-12 flex justify-between items-center px-2 py-1 `}>
         <div className="flex md:hidden cursor-poiner relative" onClick={()=>setMenu(!menu)}>
           <MenuIcon/>
         </div>
@@ -54,13 +63,13 @@ const Navbar: React.FC<NavbarProps> = ({ onLinkClick }) => {
                 </div>   
             </motion.div>
         }
-        <div className='text-[.9em] font-semibold text-gray-700 cursor-pointer'>
+        <div className={`${theme === 'dark' ? 'text-white' : 'text-gray-700'} text-[.9em] font-semibold cursor-pointer`}>
           Logo
         </div>
 
         <ul className='hidden md:flex justify-between items-center gap-4'>
           <li
-            className='relative group list-none text-[.9em] font-semibold text-gray-700 cursor-pointer'
+            className={`text-gray-700 relative group list-none text-[.9em] font-semibold cursor-pointer`}
             onClick={() => handleLinkClick('/')}
           >
             HOME
@@ -101,7 +110,9 @@ const Navbar: React.FC<NavbarProps> = ({ onLinkClick }) => {
         </ul>
 
         <div className='flex gap-2 justify-center items-center'>
-          <ThemeBtn/>
+          <div className="flex justify-center items-center p-2">
+            <ThemeBtn/>
+          </div>
           <span
             className='px-5 py-1 rounded-md border border-[primary] text-white text-center text-[.9em] bg-secondary cursor-pointer'
             onClick={() => handleLinkClick('/login')}

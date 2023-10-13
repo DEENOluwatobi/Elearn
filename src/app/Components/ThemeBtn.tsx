@@ -1,32 +1,32 @@
 "use client";
-import React, { useState } from 'react';
-import useToggle from '@utils/useToggle';
-import { motion, useAnimation } from 'framer-motion';
+import React from 'react';
 import { useTheme } from "../../../context/ThemeContext";
-import Switch from '@base/Switch';
 import IconButton from '@base/IconButton';
 import { useMid } from '@utils/useMediaQuery';
 import { Moon, Sun } from '@base/icons';
 
 const ThemeBtn = () => {
-    const mid = useMid();  
-    const [onTheme, setOnTheme] = React.useState(false);  
-    const [ mode, setMode ] = useToggle(false);
+    const mid = useMid();
     const { theme, toggleTheme } = useTheme();
 
     const iconClick = () => {
-        setOnTheme(!onTheme);
+        if (theme === 'light') {
+            toggleTheme();
+        } else if (theme === 'dark') {
+            toggleTheme();
+        }
     }
 
     return (
-        <div className='w-full h-full flex justify-center items-center'>
+        <div className='w-full h-full flex justify-center items-center py-2'>
             <IconButton
-                icon={onTheme ? <Moon className='[&>path]:fill-[#c8d8e4]'/> : <Sun  className='[&>path]:fill-[#c8d8e4]'/> }
+                icon={theme === 'dark' ? <Moon className='[&>path]:fill-[#e6f1ed]'/> : <Sun  className='[&>path]:fill-[#136e50]'/> }
                 onClick={iconClick}
-                size={mid ? 'sm' : 'sm'}
+                size={mid ? 'xs' : 'xs'}
             />
         </div>
     );
 };
 
 export default ThemeBtn;
+
