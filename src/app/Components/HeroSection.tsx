@@ -12,16 +12,16 @@ const HeroSection = () => {
 
           <div className='w-full md:w-[40%]'>
             <div className='flex flex-col justify-center md:justify-start items-center md:items-start'>
-              <span className={`poppins text-black font-bold text-[5em] primary leading-[2px]`}>Watch.</span>
-              <span className={`poppins text-black font-bold text-[5em] primary leading-[2px]`}>Learn.</span>
-              <span className={`poppins text-black font-bold text-[5em] primary leading-[2px]`}>Grow.</span>
+              <span className={`poppins text-black font-bold text-[5em]  leading-[10px]`}>Watch.</span>
+              <span className={`poppins text-black font-bold text-[5em]  leading-[10px]`}>Learn.</span>
+              <span className={`poppins text-black font-bold text-[5em]  leading-[10px]`}>Grow.</span>
             </div>
 
-            <div className='border border-gray-400 w-full h-10 rounded-lg flex overflow-hidden'>
+            <div className='border border-gray-400 w-full h-12 rounded-xl flex overflow-hidden'>
               <input 
                 type="text" 
                 placeholder='Search courses...'
-                className='border-none text-black outline-none placeholder:text-gray-300 text-sm w-full h-full px-2 py-1'
+                className='border-none text-black outline-none placeholder:text-gray-400 text-sm w-full h-full p-2'
               />
               <button 
                 type='submit' 
