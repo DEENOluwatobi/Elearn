@@ -52,7 +52,7 @@ const HeroSection = () => {
               <div className="w-5 h-5 flex items-center justify-center rounded-full border-2 border-gray-700 cursor-pointer transition duration-500 ease-in-out hover:bg-red-400 hover:border-gray-500">
                 <MailLine/>
               </div>
-              <div className="w-3 h-30 bg-gray-700"></div>
+              <div className="w-3 h-8 bg-gray-700"></div>
             </div>
           </div>
 
