@@ -21,7 +21,10 @@
 }
 
 .poppins{
-  font-family:  'Poppins', san-serif;
+  font-family:  'Poppins', sans-serif;
+}
+.barlow-c{
+  font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
 body {
