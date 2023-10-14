@@ -18,7 +18,7 @@ const Gallery = () => {
     const expand = (item: ExtendedHTMLElement, i: number) => {
       if (currentExpandedIndex === i) {
         gsap.to(item, {
-          width: '8vw',
+          width: '35vw',
           duration: 2,
           ease: 'elastic(1, .5)',
         });
