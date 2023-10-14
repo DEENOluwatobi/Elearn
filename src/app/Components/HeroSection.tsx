@@ -14,9 +14,9 @@ const HeroSection = () => {
 
           <div className='w-full md:w-[40%] flex flex-col justify-between py-2'>
             <div className='flex flex-col justify-center md:justify-start items-center md:items-start'>
-              <span className={`poppins font-bold text-[5em] text-green-700 leading-[60px]`}>Watch.</span>
-              <span className={`poppins font-bold text-[5em] text-red-600 leading-[60px]`}>Learn.</span>
-              <span className={`poppins font-bold text-[5em] text-yellow-600 leading-[60px]`}>Grow.</span>
+              <span className={`poppins font-bold text-[5em] text-green-700 leading-[80px]`}>Watch.</span>
+              <span className={`poppins font-bold text-[5em] text-red-600 leading-[80px]`}>Learn.</span>
+              <span className={`poppins font-bold text-[5em] text-yellow-600 leading-[80px]`}>Grow.</span>
             </div>
 
             <div className='border border-gray-400 w-full h-12 rounded-xl flex overflow-hidden'>
@@ -38,21 +38,21 @@ const HeroSection = () => {
 
           <div className='w-full md:w-[60%] h-full overflow-hidden flex gap-3 justify-center items-center'>
             <Gallery/>
-            <div className="flex items-center justify-center flex-col w-12 h-full gap-4">
-              <div className="w-3 h-8 bg-gray-700"></div>
-              <div className="w-5 h-5 flex items-center justify-center rounded-full border-2 border-gray-700 cursor-pointer transition duration-500 ease-in-out hover:bg-blue-400 hover:border-gray-500">
-                <FacebookLine/>
+            <div className="flex items-center justify-between flex-col w-20 h-full gap-4">
+              <div className="w-2 h-8 bg-gray-700"></div>
+              <div className="w-10 h-10 flex items-center justify-center rounded-full border-2 border-gray-700 cursor-pointer transition duration-500 ease-in-out hover:bg-blue-400 hover:border-gray-500">
+                <FacebookLine size='md' className='[&>path]:fill-[#144af9]'/>
               </div>
-              <div className="w-5 h-5 flex items-center justify-center rounded-full border-2 border-gray-700 cursor-pointer transition duration-500 ease-in-out hover:bg-blue-500 hover:border-gray-500">
-                <InstagramLine/>
+              <div className="w-10 h-10 flex items-center justify-center rounded-full border-2 border-gray-700 cursor-pointer transition duration-500 ease-in-out hover:bg-blue-500 hover:border-gray-500">
+                <TwitterLine size='md' className='[&>path]:fill-[#0d0d0d]'/>
               </div>
-              <div className="w-5 h-5 flex items-center justify-center rounded-full border-2 border-gray-700 cursor-pointer transition duration-500 ease-in-out hover:bg-gradient-to-br from-blue-400 via-red-400 to-green-400 hover:border-gray-500">
-                <TwitterLine/>
+              <div className="w-10 h-10 flex items-center justify-center rounded-full border-2 border-gray-700 cursor-pointer transition duration-500 ease-in-out hover:bg-gradient-to-br from-blue-400 via-red-400 to-green-400 hover:border-gray-500">
+                <InstagramLine size='md' className='[&>path]:fill-[#f5201c]'/>
               </div>
-              <div className="w-5 h-5 flex items-center justify-center rounded-full border-2 border-gray-700 cursor-pointer transition duration-500 ease-in-out hover:bg-red-400 hover:border-gray-500">
-                <MailLine/>
+              <div className="w-10 h-10 flex items-center justify-center rounded-full border-2 border-gray-700 cursor-pointer transition duration-500 ease-in-out hover:bg-red-400 hover:border-gray-500">
+                <MailLine size='md' className='[&>path]:fill-[#078b66]'/>
               </div>
-              <div className="w-3 h-8 bg-gray-700"></div>
+              <div className="w-2 h-8 bg-gray-700"></div>
             </div>
           </div>
 
