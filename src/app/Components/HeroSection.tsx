@@ -8,16 +8,16 @@ const HeroSection = () => {
 
   return (
       <section className="hero bg-primary">
-        <div className="relative px-4 flex flex-col md:flex-row w-full h-full justify-center items-center z-10">
+        <div className="relative px-4 flex gap-4 flex-col md:flex-row w-full h-full justify-center items-center z-10">
 
           <div className='w-full md:w-[40%]'>
-            <div className='flex flex-col gap-2 justify-center md:justify-start items-center md:items-start'>
-              <span className={`text-black font-semibold text-2xl`}>Watch.</span>
-              <span className={`text-black font-semibold text-2xl`}>Learn.</span>
-              <span className={`text-black font-semibold text-2xl`}>Grow.</span>
+            <div className='flex flex-col justify-center md:justify-start items-center md:items-start'>
+              <span className={`poppins text-black font-bold text-[5em] primary leading-1`}>Watch.</span>
+              <span className={`poppins text-black font-bold text-[5em] primary`}>Learn.</span>
+              <span className={`poppins text-black font-bold text-[5em] primary`}>Grow.</span>
             </div>
 
-            <div className='border border-gray-400 w-full h-10 rounded-lg flex'>
+            <div className='border border-gray-400 w-full h-10 rounded-lg flex overflow-hidden'>
               <input 
                 type="text" 
                 placeholder='Search courses...'
@@ -25,8 +25,8 @@ const HeroSection = () => {
               />
               <button 
                 type='submit' 
-                className='bg-secondary text-white flex justify-center items-center text-sm hover:bg-green-500 
-                            duration-150 transition ease-in-out border-none outline-none'
+                className='bg-secondary text-white flex justify-center items-center text-sm hover:bg-primary 
+                            duration-150 transition ease-in-out border-none outline-none px-4'
               >
                   Search
               </button>

@@ -20,6 +20,10 @@
   }
 }
 
+.poppins{
+  font-family:  'Poppins', san-serif;
+}
+
 body {
   /* color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -73,7 +77,7 @@ body {
 .hero {
   position: relative;
   color: white;
-  height: 75vh;
+  height: 85vh;
   display: flex;
   align-items: center;
   overflow: hidden;
