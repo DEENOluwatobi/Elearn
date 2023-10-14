@@ -20,7 +20,7 @@ const ThemeBtn = () => {
     return (
         <div className='w-full h-full flex justify-center items-center py-2'>
             <IconButton
-                icon={theme === 'dark' ? <Moon className='[&>path]:fill-[#e6f1ed]'/> : <Sun  className='[&>path]:fill-[#136e50]'/> }
+                icon={theme === 'dark' ? <Moon className='[&>path]:fill-[#d4e51d]'/> : <Sun  className='[&>path]:fill-[#141414]'/> }
                 onClick={iconClick}
                 size={mid ? 'xs' : 'xs'}
             />
