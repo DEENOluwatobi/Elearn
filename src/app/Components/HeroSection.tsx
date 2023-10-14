@@ -12,9 +12,9 @@ const HeroSection = () => {
 
           <div className='w-full md:w-[40%]'>
             <div className='flex flex-col justify-center md:justify-start items-center md:items-start'>
-              <span className={`poppins text-black font-bold text-[5em]  leading-[10px]`}>Watch.</span>
-              <span className={`poppins text-black font-bold text-[5em]  leading-[10px]`}>Learn.</span>
-              <span className={`poppins text-black font-bold text-[5em]  leading-[10px]`}>Grow.</span>
+              <span className={`poppins text-black font-bold text-[5em]  leading-[30px]`}>Watch.</span>
+              <span className={`poppins text-black font-bold text-[5em]  leading-[30px]`}>Learn.</span>
+              <span className={`poppins text-black font-bold text-[5em]  leading-[30px]`}>Grow.</span>
             </div>
 
             <div className='border border-gray-400 w-full h-12 rounded-xl flex overflow-hidden'>
@@ -26,7 +26,7 @@ const HeroSection = () => {
               <button 
                 type='submit' 
                 className='bg-secondary text-white flex justify-center items-center text-sm hover:bg-primary 
-                            duration-150 transition ease-in-out border-none outline-none px-4'
+                            duration-150 transition ease-in-out border-none outline-none px-4 w-[35%]'
               >
                   Search
               </button>
