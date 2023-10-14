@@ -30,8 +30,8 @@ const Navbar: React.FC<NavbarProps> = ({ onLinkClick }) => {
   }
 
   return (
-    <div className='fixed top-0 left-0 w-full flex flex-col'>
-      <div className={`w-full h-5 bg-secondary flex justify-center items-center`}>
+    <div className='fixed top-0 left-0 w-full flex flex-col z-[99]'>
+      <div className={`w-full h-5 bg-primary flex justify-center items-center`}>
         <span className='text-white text-[.7em] font-semibold text-center w-full'>Seeking to acquire knowledge online? - Join now</span>
       </div>
 
@@ -73,6 +73,14 @@ const Navbar: React.FC<NavbarProps> = ({ onLinkClick }) => {
             onClick={() => handleLinkClick('/')}
           >
             HOME
+            <div className="absolute bottom-0 left-0 w-0 h-[2px] bg-primary transition-all duration-300 group-hover:w-full"></div>
+          </li>
+
+          <li
+            className='relative group list-none text-[.9em] font-semibold text-gray-700 cursor-pointer'
+            onClick={() => handleLinkClick('/class')}
+          >
+            CLASSROOM
             <div className="absolute bottom-0 left-0 w-0 h-[2px] bg-primary transition-all duration-300 group-hover:w-full"></div>
           </li>
 

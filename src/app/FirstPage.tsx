@@ -44,8 +44,8 @@ const FirstPage = () => {
 
   return (
     <div style={styles.container}>
-      <Navbar onLinkClick={handleLinkClick} />
-      <div className='pt-20 h-full w-full'>
+      <Navbar onLinkClick={handleLinkClick}/>
+      <div className='pt-10 h-full w-full'>
         {pageComponent}
       </div>
     </div>

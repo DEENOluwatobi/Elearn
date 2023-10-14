@@ -1,8 +1,15 @@
-import React from 'react'
+import React from 'react';
+import { useTheme } from '@context/ThemeContext';
+import HeroSection from '../Components/HeroSection';
 
 const HomePage = () => {
+
+  const { theme } = useTheme();
+
   return (
-    <div>HomePage</div>
+      <div>
+        <HeroSection/>
+      </div>
   )
 }
 
