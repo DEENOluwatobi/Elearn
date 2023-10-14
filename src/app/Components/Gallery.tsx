@@ -18,7 +18,7 @@ const Gallery = () => {
     const expand = (item: ExtendedHTMLElement, i: number) => {
       if (currentExpandedIndex === i) {
         gsap.to(item, {
-          width: '35vw',
+          width: '50%',
           duration: 2,
           ease: 'elastic(1, .5)',
         });
@@ -29,7 +29,7 @@ const Gallery = () => {
           if (i !== ind && currentElement.clicked) {
             currentElement.clicked = false;
             gsap.to(it, {
-              width: '8vw',
+              width: '15%',
               duration: 2,
               ease: 'elastic(1, .5)',
             });
@@ -38,7 +38,7 @@ const Gallery = () => {
 
         item.clicked = true;
         gsap.to(item, {
-          width: '35vw',
+          width: '50%',
           duration: 2.5,
           ease: 'elastic(1, .5)',
         });
@@ -51,7 +51,7 @@ const Gallery = () => {
       const currentElement = item as ExtendedHTMLElement;
       currentElement.clicked = i === 0;
       gsap.to(item, {
-        width: currentElement.clicked ? '35vw' : '8vw',
+        width: currentElement.clicked ? '50%' : '15%',
         duration: 2.5,
         ease: 'elastic(1, .5)',
       });
