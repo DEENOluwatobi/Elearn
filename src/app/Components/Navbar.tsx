@@ -58,8 +58,19 @@ const Navbar: React.FC<NavbarProps> = ({ onLinkClick }) => {
                   <span className='text-white font-semibold' onClick={()=>MobileLinkClick('/batch')}>Batch-23</span>
                 </div>
 
-                <div className='w-full mt-auto p-3'>
+                <div className='flex flex-col gap-2 border-b border-[#f2f2f2] py-2'>
+                  <span className='text-white font-semibold' onClick={()=>MobileLinkClick('/#about')}>Login</span>
+                  <span
+                    className={`${theme === 'dark' ? 'text-black bg-white' : 'text-white bg-black'} px-6 py-2 rounded-full  text-center cursor-pointer w-full`}
+                    onClick={() => handleLinkClick('/register')}
+                  >
+                    Register
+                  </span>
+                </div>
+
+                <div className='w-full mt-auto p-3 flex items-center justify-center gap-2'>
                   <ThemeBtn/>
+                  <Phone/>
                 </div>   
             </motion.div>
         }

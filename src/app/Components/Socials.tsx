@@ -16,7 +16,7 @@ const Socials = () => {
             <div className="w-12 h-12 flex items-center justify-center rounded-full border border-gray-500 cursor-pointer transition duration-500 ease-in-out hover:bg-gradient-to-br from-yellow-200 via-red-200 to-blue-200 hover:border-gray-500">
                 <InstagramLine size='md' className={`${theme === 'dark' ? '[&>path]:fill-[#ffffff]' : '[&>path]:fill-[#0d0d0d] hover:[&>path]:fill-[#e8074e]' }`}/>
             </div>
-            <div className="w-12 h-12 flex items-center justify-center rounded-full border border-gray-500 cursor-pointer transition duration-500 ease-in-out hover:bg-yellow-200 hover:border-red-500">
+            <div className="w-12 h-12 flex items-center justify-center rounded-full border border-gray-500 cursor-pointer transition duration-500 ease-in-out hover:bg-red-200 hover:border-red-500">
                 <GoogleIcon size='sm' className={`${theme === 'dark' ? '[&>path]:fill-[#ffffff]' : '[&>path]:fill-[#0d0d0d] hover:[&>path]:fill-[#f10909]' }`}/>
             </div>
             <div className={`${theme === 'dark' ? 'bg-white' : 'bg-gray-700'} w-1 h-8 `}></div>

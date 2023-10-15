@@ -71,8 +71,8 @@ const sizes = {
   export const GoogleIcon = ({ size = "original", className }: iconProp) => {
     return (
       <svg
-        width="24"
-        height="24"
+        width="22"
+        height="22"
         className={`${sizes[size]} ${className ? className : ""}`}
         viewBox="0 0 26 26"
         fill="none"
