@@ -27,6 +27,9 @@
 .barlow-c{
   font-family: 'Barlow Semi Condensed', sans-serif;
 }
+.barlow{
+  font-family: 'Barlow', sans-serif;
+}
 
 body {
   /* color: rgb(var(--foreground-rgb));

@@ -1,7 +1,6 @@
 import React from 'react';
 import { useTheme } from '@context/ThemeContext';
 import Gallery from './Gallery';
-import { FacebookLine, MailLine, InstagramLine, TwitterLine, GoogleIcon } from '@base/icons';
 import Socials from './Socials';
 
 
@@ -18,11 +17,11 @@ const HeroSection = () => {
               <Socials/>
             </div>
 
-            <div className='w-full flex flex-col justify-between py-2'>
+            <div className='w-full h-full flex flex-col justify-between py-2 gap-5'>
               
-              <div className='flex flex-col justify-center md:justify-start items-center md:items-start'>
-                <span className={`font-bold text-[2.5em] text-red-600`}>
-                    Empowering Minds, Transforming Futures
+              <div className='flex flex-col justify-center md:justify-start items-center md:items-start gap-2'>
+                <span className={`barlow font-bold text-[3em] primary`}>
+                    Empowering Minds, Transforming Futures 
                 </span>
                 <span className={`${theme === 'dark' ? 'text-white' : 'text-gray-600'} w-[65%]`}>
                     Transforming Minds and Shaping Futures - Where the Virtues of Education 
