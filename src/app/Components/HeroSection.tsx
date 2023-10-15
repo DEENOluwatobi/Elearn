@@ -21,9 +21,13 @@ const HeroSection = () => {
             <div className='w-full flex flex-col justify-between py-2'>
               
               <div className='flex flex-col justify-center md:justify-start items-center md:items-start'>
-                <span className={`poppins font-bold text-[5em] text-green-700 leading-[80px]`}>Watch.</span>
-                <span className={`poppins font-bold text-[5em] text-red-600 leading-[80px]`}>Learn.</span>
-                <span className={`poppins font-bold text-[5em] text-yellow-600 leading-[80px]`}>Grow.</span>
+                <span className={`font-bold text-[2.5em] text-red-600`}>
+                    Empowering Minds, Transforming Futures
+                </span>
+                <span className={`${theme === 'dark' ? 'text-white' : 'text-gray-600'} `}>
+                    "Transforming Minds and Shaping Futures: Where the Virtues of Education 
+                    Merge with the Frontiers of Innovation"
+                </span>
               </div>
 
               <div className='border border-gray-400 w-full h-12 rounded-xl flex overflow-hidden'>
