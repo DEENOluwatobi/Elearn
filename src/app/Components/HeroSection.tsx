@@ -25,8 +25,8 @@ const HeroSection = () => {
                     Empowering Minds, Transforming Futures
                 </span>
                 <span className={`${theme === 'dark' ? 'text-white' : 'text-gray-600'} w-[65%]`}>
-                    "Transforming Minds and Shaping Futures: Where the Virtues of Education 
-                    Merge with the Frontiers of Innovation"
+                    Transforming Minds and Shaping Futures - Where the Virtues of Education 
+                    Merge with the Frontiers of Innovation
                 </span>
               </div>
 
@@ -34,11 +34,11 @@ const HeroSection = () => {
                 <input 
                   type="text" 
                   placeholder='Search courses...'
-                  className='border-none text-black outline-none placeholder:text-gray-600 text-sm w-full h-full p-2'
+                  className='border-none text-black outline-none placeholder:text-gray-600 w-full h-full p-2'
                 />
                 <button 
                   type='submit' 
-                  className='bg-black text-white flex justify-center items-center text-sm hover:bg-gray-800
+                  className='bg-black text-white flex justify-center items-center hover:bg-gray-800
                   duration-150 transition ease-in-out border-none outline-none px-4 w-[35%]'
                 >
                     Search
