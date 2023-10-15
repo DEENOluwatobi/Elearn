@@ -20,10 +20,10 @@ const HeroSection = () => {
             <div className='w-full h-full flex flex-col justify-between py-2 gap-5'>
               
               <div className='flex flex-col justify-center md:justify-start items-center md:items-start gap-2'>
-                <span className={`barlow font-bold text-[2.8em] primary`}>
+                <span className={`barlow font-bold text-[2.6em] primary`}>
                     Empowering Minds, Transforming Futures 
                 </span>
-                <span className={`${theme === 'dark' ? 'text-white' : 'text-gray-600'} w-[65%] text-[1.5em]`}>
+                <span className={`${theme === 'dark' ? 'text-white' : 'text-gray-600'} w-[65%] text-[1.1em]`}>
                     Transforming Minds and Shaping Futures - Where the Virtues of Education 
                     Merge with the Frontiers of Innovation
                 </span>
