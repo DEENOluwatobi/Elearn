@@ -19,7 +19,7 @@ const Socials = () => {
             <div className="w-12 h-12 flex items-center justify-center rounded-full border border-gray-500 cursor-pointer transition duration-500 ease-in-out hover:bg-yellow-200 hover:border-red-500">
                 <GoogleIcon size='sm' className={`${theme === 'dark' ? '[&>path]:fill-[#ffffff]' : '[&>path]:fill-[#0d0d0d] hover:[&>path]:fill-[#f10909]' }`}/>
             </div>
-            <div className="w-1 h-8 bg-gray-700"></div>
+            <div className={`${theme === 'dark' ? 'bg-white' : 'bg-gray-700'} w-1 h-8 `}></div>
     </div>
   )
 }

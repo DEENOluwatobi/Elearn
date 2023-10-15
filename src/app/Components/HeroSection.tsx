@@ -24,7 +24,7 @@ const HeroSection = () => {
                 <span className={`font-bold text-[2.5em] text-red-600`}>
                     Empowering Minds, Transforming Futures
                 </span>
-                <span className={`${theme === 'dark' ? 'text-white' : 'text-gray-600'} `}>
+                <span className={`${theme === 'dark' ? 'text-white' : 'text-gray-600'} w-[65%]`}>
                     "Transforming Minds and Shaping Futures: Where the Virtues of Education 
                     Merge with the Frontiers of Innovation"
                 </span>
