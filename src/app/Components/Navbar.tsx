@@ -31,11 +31,11 @@ const Navbar: React.FC<NavbarProps> = ({ onLinkClick }) => {
 
   return (
     <div className='fixed top-0 left-0 w-full flex flex-col z-[99]'>
-      <div className={`w-full h-5 bg-black flex justify-center items-center`}>
-        <span className='text-white text-[.7em] font-semibold text-center w-full'>Seeking to acquire knowledge online? - Join now</span>
+      <div className={`w-full h-6 bg-black flex justify-center items-center`}>
+        <span className='text-white text-[.8em] font-semibold text-center w-full'>Seeking to acquire knowledge online? - Join now</span>
       </div>
 
-      <div className={`w-full h-12 md:h-16 flex justify-between items-center px-2 py-1 ${theme === 'dark' ? 'bg-[#b4b3b3]' : 'bg-white'} backdrop-filter backdrop-blur-md bg-opacity-20 border border-gray-200 rounded-lg`}>
+      <div className={`w-full h-12 md:h-16 flex justify-between items-center px-2 py-1 ${theme === 'dark' ? 'bg-[#302f2f]' : 'bg-white'} backdrop-filter backdrop-blur-md bg-opacity-20 shadow-sm`}>
         <div className="flex md:hidden cursor-poiner relative" onClick={()=>setMenu(!menu)}>
           <MenuIcon/>
         </div>
@@ -63,13 +63,13 @@ const Navbar: React.FC<NavbarProps> = ({ onLinkClick }) => {
                 </div>   
             </motion.div>
         }
-        <div className={`${theme === 'dark' ? 'text-white' : 'text-gray-700'} text-[.9em] font-semibold cursor-pointer`}>
+        <div className={`${theme === 'dark' ? 'text-white' : 'text-gray-700'} font-semibold cursor-pointer`}>
           Logo
         </div>
 
         <ul className='hidden md:flex justify-between items-center gap-4'>
           <li
-            className={`text-black relative group list-none text-[.9em] font-semibold cursor-pointer`}
+            className={`${theme === 'dark' ? 'text-white' : 'text-black'} relative group list-none cursor-pointer`}
             onClick={() => handleLinkClick('/')}
           >
             Home
@@ -77,7 +77,7 @@ const Navbar: React.FC<NavbarProps> = ({ onLinkClick }) => {
           </li>
 
           <li
-            className='relative group list-none text-[.9em] font-semibold text-black cursor-pointer'
+            className={`${theme === 'dark' ? 'text-white' : 'text-black'} relative group list-none cursor-pointer`}
             onClick={() => handleLinkClick('/class')}
           >
             Classroom
@@ -85,7 +85,7 @@ const Navbar: React.FC<NavbarProps> = ({ onLinkClick }) => {
           </li>
 
           <li
-            className='relative group list-none text-[.9em] font-semibold text-black cursor-pointer'
+            className={`${theme === 'dark' ? 'text-white' : 'text-black'} relative group list-none cursor-pointer`}
             onClick={() => handleLinkClick('/admission')}
           >
             Admission
@@ -93,7 +93,7 @@ const Navbar: React.FC<NavbarProps> = ({ onLinkClick }) => {
           </li>
 
           <li
-            className='relative group list-none text-[.9em] font-semibold text-black cursor-pointer'
+            className={`${theme === 'dark' ? 'text-white' : 'text-black'} relative group list-none cursor-pointer`}
             onClick={() => handleLinkClick('/skill')}
           >
             Skill
@@ -101,7 +101,7 @@ const Navbar: React.FC<NavbarProps> = ({ onLinkClick }) => {
           </li>
 
           <li
-            className='relative group list-none text-[.9em] font-semibold text-black cursor-pointer'
+            className={`${theme === 'dark' ? 'text-white' : 'text-black'} relative group list-none cursor-pointer`}
             onClick={() => handleLinkClick('/batch')}
           >
             Batch-23
@@ -109,7 +109,7 @@ const Navbar: React.FC<NavbarProps> = ({ onLinkClick }) => {
           </li>
 
           <li
-            className='relative group list-none text-[.9em] font-semibold text-black cursor-pointer'
+            className={`${theme === 'dark' ? 'text-white' : 'text-black'} relative group list-none cursor-pointer`}
             onClick={() => handleLinkClick('/about')}
           >
             About
@@ -119,19 +119,19 @@ const Navbar: React.FC<NavbarProps> = ({ onLinkClick }) => {
 
         <div className='flex gap-2 justify-center items-center'>
           <div className="flex justify-center items-center p-2">
-            <Phone className='text-black cursor-pointer'/>
+            <Phone className={`${theme === 'dark' ? 'text-white' : 'text-black'} cursor-pointer`}/>
           </div>
           <div className="flex justify-center items-center p-2">
             <ThemeBtn/>
           </div>
           <div 
             onClick={() => handleLinkClick('/register')} 
-            className={`text-black py-2 border-b-2 border-black cursor-pointer`}
+            className={`${theme === 'dark' ? 'text-white border-white' : 'text-black border-black'} py-1 border-b-2 cursor-pointer`}
           >
               Login
           </div>
           <span
-            className='px-6 py-1 rounded-full text-white text-center text-[.9em] bg-black cursor-pointer'
+            className={`${theme === 'dark' ? 'text-black bg-white' : 'text-white bg-black'} px-6 py-2 rounded-full  text-center cursor-pointer`}
             onClick={() => handleLinkClick('/register')}
           >
             Register
